@@ -1,14 +1,23 @@
-import React from 'react';
-import Employee from './pages/Employee'
-import Container from "./components/Container"
-import './App.css';
+import React from "react";
+import Jumbotron from "./pages";
+import Container from "./components/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Wrapper from "./components/Wrapper";
+import "./App.css";
 
 function App() {
   return (
-    <div >
+    <div>
       <Container>
-        <Employee/>
-     </Container>
+        <Row>
+          <Col>
+            <Wrapper>
+              <Jumbotron />
+            </Wrapper>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
